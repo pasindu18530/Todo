@@ -1,3 +1,9 @@
+document.getElementById("btnAddTask").addEventListener("click",addTask)
+
+
+
+let doneTaskList = [];
+
 function addTask() {
   let userInput = document.getElementById("txtUserInput").value;
   document.getElementById("todo List").innerHTML+=`<li class =<div class="card">
@@ -7,8 +13,19 @@ function addTask() {
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-danger"> <input class="form-check-input" type="checkbox" value="" id="doneCheckBox"></a>
   </div>
 </div>`
   
+
+
+document.getElementById("doneCheckBox").addEventListener("change",function () {
+  if (this.checked) {
+    
+  }
+  
+
+  
+})
+
 }
